@@ -1,0 +1,4 @@
+PyPDF2==1.26.0
+tabula-py==1.2.0
+pdfminer.six-20170720
+more-itertools==4.1.0
