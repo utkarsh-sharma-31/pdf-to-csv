@@ -1,4 +1,4 @@
-Mutual Fund Folios (F),,,,,,,,,
+Mutual Fund Folios (F),a,b,c,d,e,f,i,j,k
 "ISIN
 UCC",ISIN Descriptio,Folio No.,"No. of
 Units","Average
@@ -16,20 +16,6 @@ NOT AVAILABLE","DSP BlackRock
 Dynamic Asset
 Allocation Fund -
 Reg - Growth",2924380,0.000,,0.00,,0.00,0.00,
-,,,,
-"ISIN
-UCC",ISIN Descriptio,Folio No.,"No. of
-Units","Average
-Cost
-Per Units
-`","Total Cost
-`","Current NAV
-per unit
-in `","urrent Valu
-in `","Unrealised
-Profit/(Loss)
-`","Annualised
-Return(%)"
 "INF090I01155
 MFTEMP0011","Franklin India
 BLUECHIP FUND -
@@ -58,8 +44,6 @@ Regular Plan -
 Dividend",11447431,"11,609.907",12.9200,"1,50,000.00",27.0221,"3,13,724.07","1,63,724.07",12.84
 "INF200K01115
 MFSBIM0017","SBI Magnum
-Balanced Fund -
-Regular Plan -
 Dividend",11447432,"6,504.770",23.0600,"1,50,000.00",29.1674,"1,89,727.23","39,727.23",9.41
 "INF789F01760
 MFUTIB0068","UTI-BLUECHIP

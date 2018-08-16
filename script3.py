@@ -44,6 +44,9 @@ def decrypt_file(filepath,password=None):
     except OSError as e:
         raise ValueError(e)
 
+    main_logic()
+
+
 
 def writeTable1(start_string, end_string, current_index, specific_index, line, csv_writter,end_string_index=0,start_string2=None):
     if line[0].startswith(start_string):
@@ -224,27 +227,6 @@ def main_logic():
             else:
                 writer.writerow(row)
 
-    # for i in range(1,10):
-    #     try:
-    #         print(i)
-    #         filename = str('tables/table'+str(i)+'.csv')
-    #         out_filename = str('tables2/table'+str(i)+'.csv')
-    #         df = pd.read_csv(filename,error_bad_lines=False)
-    #
-    #         df.drop_duplicates(subset=None, inplace=True)
-    #
-    #         # Write the results to a different file
-    #         df.to_csv(out_filename)
-    #     except Exception as e:
-    #         print(e)
-
-
-    # for i in range(1,10):
-    #     filename = str('tables/table' + str(i) + '.csv')
-    #     out_filename = str('tables2/table'+str(i)+'.csv')
-    #
-    #     with open(filename, 'r') as inFile, open(out_filename, 'w') as outFile:
-    #         outFile.writelines(unique_everseen(inFile))
 
 if __name__ == "__main__":
     decrypt_file(sys.argv[1],sys.argv[2])
