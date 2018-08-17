@@ -2,10 +2,11 @@ import csv
 import subprocess
 import re
 import pandas as pd
-# from more_itertools import unique_everseen
 import sys
 from os.path import relpath
 import os
+import re
+import numpy as np
 
 index_dict = {
     "index1" : 10000,
@@ -95,6 +96,128 @@ def writeTable2(start_string, end_string, current_index, specific_index, line, c
         return False
     else:
         return False
+
+
+def table1_fix():
+    filename = 'tables/table1.csv'
+    df = pd.read_csv(filename)
+
+    dp_id_arr=[]
+    client_id_arr=[]
+    account_details_arr=[]
+    for name, value in df['Account Details'].iteritems():
+        dp_id = re.search('DP ID:+(\w+)', value)
+        if dp_id:
+            dp_id_arr.append(dp_id.group(1))
+        else:
+            dp_id_arr.append(np.nan)
+
+        client_id = re.search('Client ID:+(\w+)', value)
+        if client_id:
+            client_id_arr.append(client_id.group(1))
+        else:
+            client_id_arr.append(np.nan)
+        account_details_arr.append(value.split('\n')[0])
+
+    df=df.assign(DP_ID = dp_id_arr,Client_id=client_id_arr)
+    df['Account Details']=account_details_arr
+    df = df[['Account Type', 'Account Details', 'DP_ID', 'Client_id','No. of\nISINs / Schemes', 'Value in `']]
+    df.to_csv('tables/table1a.csv')
+    if os.path.isfile("tables/table1.csv"):
+        os.remove("tables/table1.csv")
+
+
+def table5_fix():
+    with open('tables/table5.csv','r') as in_file, open('tables/table5a.csv','w') as out_file:
+        seen = set() # set for fast O(1) amortized lookup
+        for line in in_file:
+            if line in seen: continue # skip duplicate
+
+            seen.add(line)
+            out_file.write(line)
+
+    filename = 'tables/table5a.csv'
+    df = pd.read_csv(filename)
+    df.columns = ['Mutual Fund Folios (F)', 'a','b','c','d','e','f','i','j','k']
+    df = df[pd.notnull(df['a'])]
+    df.to_csv('tables/table5.csv', index=False)
+
+    isin_arr = []
+    ucc_arr = []
+    for name, value in df['Mutual Fund Folios (F)'].iteritems():
+        split_cel = value.split('\n')
+        if len(split_cel):
+            isin_arr.append(split_cel[0])
+        else:
+            isin_arr.append(np.nan)
+
+        if len(split_cel)>1:
+            ucc_arr.append(split_cel[1])
+        else:
+            ucc_arr.append(np.nan)
+    df['Mutual Fund Folios (F)'] = isin_arr
+    df=df.assign(UCC = ucc_arr)
+    df = df[['Mutual Fund Folios (F)','UCC', 'a','b','c','d','e','f','i','j','k']]
+    df.to_csv('tables/table5a.csv', index=False)
+    if os.path.isfile("tables/table5.csv"):
+        os.remove("tables/table5.csv")
+
+def table3_fix():
+    with open('tables/table3.csv', 'r') as infile, \
+            open('tables/table3a.csv', 'w') as outfile:
+        file = csv.reader(infile, skipinitialspace=True)
+        writer = csv.writer(outfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+
+        # df.row.str.extract('(?P<fips>\d{5})((?P<state>[A-Z ]*$)|(?P<county>.*?), (?P<state_code>[A-Z]{2}$))')
+
+        for index, line in enumerate(file):
+            column1 = re.search("^[a-zA-Z\s+()]+", line[0]).group(0)
+            line = re.sub("^[a-zA-Z\s+()]+", "", line[0])
+            column2 = re.search("^[0-9]{1,2}?(,[0-9]{1,3})+.[0-9][0-9]|^[0-9]+.[0-9][0-9]", line)
+            if column2:
+                column2 = column2.group(0)
+            else:
+                column2 = ''
+            column3 = re.sub("^[0-9]{1,2}?(,[0-9]{1,3})+.[0-9][0-9]|^[0-9]+.[0-9][0-9]", "", line)
+            row = (column1 + '|' + column2 + '|' + column3).split('|')
+            if index == 0:
+                writer.writerow(['ASSET CLASS', 'Value in Rs', '%'])
+            else:
+                writer.writerow(row)
+    if os.path.isfile("tables/table3.csv"):
+        os.remove("tables/table3.csv")
+
+
+def table4_fix():
+    filename = 'tables/table4.csv'
+    df = pd.read_csv(filename, error_bad_lines=False)
+    df.to_csv('tables/table4a.csv',index=False)
+
+    with open('tables/table4.csv','r') as in_file, open('tables/table4a.csv','r') as in_file2, open('tables/table4b.csv','w') as outfile:
+        reader1 = csv.reader(in_file2)
+        row_list = list(reader1)
+        reader2 = csv.reader(in_file)
+        writer = csv.writer(outfile)
+        for row in reader2:
+            if row not in row_list:
+                writer.writerow(row)
+    if os.path.isfile("tables/table4.csv"):
+        os.remove("tables/table4.csv")
+
+    df1 = pd.read_csv("tables/table4a.csv")
+    df2 = pd.read_csv("tables/table4b.csv")
+    for name, value in df.iteritems():
+        print(value)
+        # split_cel = value.split('\n')
+        # if len(split_cel)>0:
+        #     isin_arr.append(split_cel[0])
+        # else:
+        #     isin_arr.append(np.nan)
+        #
+        # if len(split_cel)>1:
+        #     ucc_arr.append(split_cel[1])
+        # else:
+        #     ucc_arr.append(np.nan)
 
 
 def main_logic():
@@ -203,30 +326,15 @@ def main_logic():
                        csv_writter = writer10) == True:
                 continue
 
+    table1_fix()
+    table5_fix()
+    table3_fix()
+    table4_fix()
 
-
-    with open('tables/table3.csv', 'r') as infile, \
-            open('tables/table3a.csv', 'w') as outfile:
-        file = csv.reader(infile, skipinitialspace=True)
-        writer = csv.writer(outfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-
-        # df.row.str.extract('(?P<fips>\d{5})((?P<state>[A-Z ]*$)|(?P<county>.*?), (?P<state_code>[A-Z]{2}$))')
-
-        for index, line in enumerate(file):
-            column1 = re.search("^[a-zA-Z\s+()]+", line[0]).group(0)
-            line = re.sub("^[a-zA-Z\s+()]+", "", line[0])
-            column2 = re.search("^[0-9]{1,2}?(,[0-9]{1,3})+.[0-9][0-9]|^[0-9]+.[0-9][0-9]", line)
-            if column2:
-                column2 = column2.group(0)
-            else:
-                column2 = ''
-            column3 = re.sub("^[0-9]{1,2}?(,[0-9]{1,3})+.[0-9][0-9]|^[0-9]+.[0-9][0-9]", "", line)
-            row = (column1 + '|' + column2 + '|' + column3).split('|')
-            if index == 0:
-                writer.writerow(['ASSET CLASS', 'Value in Rs', '%'])
-            else:
-                writer.writerow(row)
 
 
 if __name__ == "__main__":
-    decrypt_file(sys.argv[1],sys.argv[2])
+    if len(sys.argv) > 2:
+        decrypt_file(sys.argv[1],sys.argv[2])
+    else:
+        decrypt_file(sys.argv[1])

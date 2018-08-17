@@ -2,66 +2,99 @@ import pandas as pd
 import re
 import numpy as np
 import math
+import csv
 
-def table1_fix():
-    filename = 'tables/table1.csv'
-    df = pd.read_csv(filename)
+df1 = pd.read_csv("tables/table4a.csv")
+df2 = pd.read_csv("tables/table4b.csv")
 
-    dp_id_arr=[]
-    client_id_arr=[]
-    account_details_arr=[]
-    for name, value in df['Account Details'].iteritems():
-        dp_id = re.search('DP ID:+(\w+)', value)
-        if dp_id:
-            dp_id_arr.append(dp_id.group(1))
-        else:
-            dp_id_arr.append(np.nan)
+if '\n' in str(df1['Unnamed: 2'][0]) :
+    df=df1
+    req_column1 = 'Unnamed: 2'
+    req_column2 = 'Unnamed: 3'
+    req_column3 = 'Unnamed: 4'
+    table_file =  "tables/table4a.csv"
+else:
+    df=df2
+    req_column1 = 'Unnamed: 1'
+    req_column2 = 'Unnamed: 2'
+    req_column3 = 'Unnamed: 3'
+    table_file = "tables/table4b.csv"
 
-        client_id = re.search('Client ID:+(\w+)', value)
-        if client_id:
-            client_id_arr.append(client_id.group(1))
-        else:
-            client_id_arr.append(np.nan)
-        account_details_arr.append(value.split('\n')[0])
+current_bal = []
+free_bal = []
+lent_bal = []
 
-    df=df.assign(DP_ID = dp_id_arr,Client_id=client_id_arr)
-    df['Account Details']=account_details_arr
-    df = df[['Account Type', 'Account Details', 'DP_ID', 'Client_id','No. of\nISINs / Schemes', 'Value in `']]
-    # for name, value in df.iteritems():
-    #     print(value)
-
-    df.to_csv('tables/table1a.csv')
-
-
-
-with open('tables/table5.csv','r') as in_file, open('tables/table5a.csv','w') as out_file:
-    seen = set() # set for fast O(1) amortized lookup
-    for line in in_file:
-        if line in seen: continue # skip duplicate
-
-        seen.add(line)
-        out_file.write(line)
-
-filename = 'tables/table5a.csv'
-df = pd.read_csv(filename)
-df.columns = ['Mutual Fund Folios (F)', 'a','b','c','d','e','f','i','j','k']
-df = df[pd.notnull(df['a'])]
-df.to_csv('tables/table5.csv', index=False)
-
-isin_arr = []
-ucc_arr = []
-for name, value in df['Mutual Fund Folios (F)'].iteritems():
-    split_cel = value.split('\n')
-    if len(split_cel)>0:
-        isin_arr.append(split_cel[0])
+for name, value in df[req_column1].iteritems():
+    split_cel = str(value).split('\n')
+    if len(split_cel):
+        current_bal.append(split_cel[0])
     else:
-        isin_arr.append(np.nan)
+        current_bal.append(np.nan)
 
-    if len(split_cel)>1:
-        ucc_arr.append(split_cel[1])
+    if len(split_cel) > 1:
+        free_bal.append(split_cel[1])
     else:
-        ucc_arr.append(np.nan)
-df['Mutual Fund Folios (F)'] = isin_arr
-df=df.assign(UCC = ucc_arr)
-df = df[['Mutual Fund Folios (F)','UCC', 'a','b','c','d','e','f','i','j','k']]
-df.to_csv('tables/table5a.csv', index=False)
+        free_bal.append((np.nan))
+
+    if len(split_cel) > 2:
+        lent_bal.append(split_cel[2])
+    else:
+        lent_bal.append(np.nan)
+
+df[req_column1] = current_bal
+df['Unnamed: 6'] = free_bal
+df['Unnamed: 7'] = lent_bal
+
+safekeep_bal=[]
+locked_bal= []
+pledge_bal=[]
+
+for name, value in df[req_column2].iteritems():
+    split_cel = str(value).split('\n')
+    if len(split_cel):
+        safekeep_bal.append(split_cel[0])
+    else:
+        safekeep_bal.append(np.nan)
+
+    if len(split_cel) > 1:
+        locked_bal.append(split_cel[1])
+    else:
+        locked_bal.append((np.nan))
+
+    if len(split_cel) > 2:
+        pledge_bal.append(split_cel[2])
+    else:
+        pledge_bal.append(np.nan)
+
+df[req_column2] = safekeep_bal
+df['Unnamed: 8'] = locked_bal
+df['Unnamed: 9'] = pledge_bal
+
+pledged_bal=[]
+earmarked_bal=[]
+pledgee_bal=[]
+
+
+for name, value in df[req_column3].iteritems():
+    split_cel = str(value).split('\n')
+    if len(split_cel):
+        pledged_bal.append(split_cel[0])
+    else:
+        pledged_bal.append(np.nan)
+
+    if len(split_cel) > 1:
+        earmarked_bal.append(split_cel[1])
+    else:
+        earmarked_bal.append((np.nan))
+
+    if len(split_cel) > 2:
+        pledgee_bal.append(split_cel[2])
+    else:
+        pledgee_bal.append(np.nan)
+
+df[req_column3] = pledged_bal
+df['Unnamed: 10'] = earmarked_bal
+df['Unnamed: 11'] = pledgee_bal
+
+df.to_csv(table_file)
+
