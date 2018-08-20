@@ -2,37 +2,37 @@
 "",,,,
 Page 2,,Consolidated Account Statement
 Your Demat Account and Mutual Fund Folios,,,
-In the joint Names of,,,
-"TALPADE DEEPAK KESHAV (PAN:AABPT5733E)TALPADE NUTAN DEEPAK (PAN:ABAPT6150B)",,,
+In the Single Name of,,,
+SHARAD  SINGH (PAN:AMZPS1060M),,,
 Account Type,Account Details,"No. ofISINs / Schemes",Value in `
-NSDL Demat Account,"SBICAP SECURITIES LIMITEDDP ID:IN306114 Client ID:90066770",1,"3,40,360.00"
-CDSL Demat Account,"BHH SECURITIES PRIVATE LIMITEDDP ID:12052200 Client ID:00006701",1,"49,252.50"
-Mutual Fund Folios,8 Folios,9,"16,43,647.94"
-"",Total,"20,33,260.44",
-"",Grand Total,"20,33,260.44",
+NSDL Demat Account,"EDELWEISS BROKING LIMITEDDP ID:IN303719 Client ID:10230151",0,0.00
+CDSL Demat Account,"ZERODHA SECURITIES PRIVATE LIMITEDDP ID:12081600 Client ID:03092061",5,"5,86,662.50"
+Mutual Fund Folios,6 Folios,9,"8,21,267.63"
+"",Total,"14,07,930.13",
+"",Grand Total,"14,07,930.13",
 Your e-Insurance Account (eIA) :  NONE WITH NSDL NATIONAL INSURANCE REPOSITORY(NIR),,,
 eIA in the name of,,,
 Type of Policy,No. of Policies,"No. of InsuranceCompanies",Total Sum Assured `
 Month,"Consolidated PortfolioValue (`)","Change(`)","Change(%)"
-FEB 2017,"21,23,862.40",NA,NA
-MAR 2017,"21,65,580.70",+41718.30,+1.96
-APR 2017,"21,71,340.50",+5759.80,+0.27
-MAY 2017,"21,70,175.06",-1165.44,-0.05
-JUN 2017,"20,55,327.87",-114847.19,-5.29
-JUL 2017,"21,84,607.27",+129279.40,+6.29
-AUG 2017,"21,13,987.23",-70620.04,-3.23
-SEP 2017,"20,75,260.14",-38727.09,-1.83
-OCT 2017,"22,02,544.91",+127284.77,+6.13
-NOV 2017,"22,44,941.53",+42396.62,+1.92
-DEC 2017,"22,75,124.07",+30182.54,+1.34
-JAN 2018 *,"22,78,702.56",+3578.49,+0.16
-FEB 2018,"20,33,260.44",-245442.12,-10.77
+MAY 2017,"7,30,320.18",NA,NA
+JUN 2017,"9,78,191.23",+247871.05,+33.94
+JUL 2017,"5,93,345.56",-384845.67,-39.34
+AUG 2017,"8,00,689.44",+207343.88,+34.94
+SEP 2017,"7,75,149.89",-25539.55,-3.19
+OCT 2017,"12,15,069.98",+439920.09,+56.75
+NOV 2017,"12,73,197.15",+58127.17,+4.78
+DEC 2017,"14,55,187.72",+181990.57,+14.29
+JAN 2018,"15,25,467.58",+70279.86,+4.83
+FEB 2018,"15,32,081.83",+6614.25,+0.43
+MAR 2018,"14,54,672.21",-77409.62,-5.05
+APR 2018,"15,72,236.63",+117564.42,+8.08
+MAY 2018,"14,07,930.13",-164306.50,-10.45
 "",,,,
 Page 3,,Consolidated Account Statement
-"Summary of value of holdings of TALPADE DEEPAKKESHAV, TALPADE NUTAN DEEPAK",,,
+Summary of value of holdings of SHARAD  SINGH,,,
 "",,PORTFOLIO COMPOSITION,
 ASSET CLASSValue in `%,,,
-"Equities (E)3,89,612.5019.16%",,,
+"Equities (E)5,86,662.5041.66%",,,
 Preference Shares (P)0.000.00%,,,
 Mutual Funds (M)0.000.00%,,,
 Corporate Bonds (C)0.000.00%,,,
@@ -40,69 +40,79 @@ Money Market Instruments (I)0.000.00%,,,
 Securitised Instruments (S)0.000.00%,,,
 Government Securities (G)0.000.00%,,,
 Postal Saving Scheme (O)0.000.00%,,,
-"Mutual Fund Folios (F)16,43,647.9480.83%",,,
-"TOTAL20,33,260.44",,,
-"NSDL Demat AccountSBICAP SECURITIES LIMITEDDP ID: IN306114 Client ID: 90066770","ACCOUNT HOLDERSTALPADE DEEPAK KESHAV (PAN:AABPT5733E)TALPADE NUTAN DEEPAK (PAN:ABAPT6150B)"
-Equities (E),,,,,
-Equity Shares,,,,,
-"ISINStock Symbol",Company Name,"Face Valuein `","No. ofShares","MarketPrice in `",Value in `
-"INE062A01020SBIN.NSE",STATE BANK OF INDIA,1.00,"1,270",268.00,"3,40,360.00"
-"",,,,,
-Sub Total,"3,40,360.00",,,,
-Total,"3,40,360.00",,,,
-"CDSL Demat AccountBHH SECURITIES PRIVATE LIMITEDDP ID: 12052200 Client ID: 00006701","ACCOUNT HOLDERSDEEPAK KESHAV TALPADE (PAN:AABPT5733E)NUTAN DEEPAK TALPADE (PAN:ABAPT6150B)"
+"Mutual Fund Folios (F)8,21,267.6358.33%",,,
+"TOTAL14,07,930.13",,,
+"CDSL Demat AccountZERODHA SECURITIES PRIVATE LIMITEDDP ID: 12081600 Client ID: 03092061","ACCOUNT HOLDERSHARAD  SINGH (PAN:AMZPS1060M)"
 Equities (E),,,,,,
 ISIN,SECURITY,"Current Bal.Free Bal.Lent Bal.","Safekeep Bal.Locked In Bal.Pledge Setup Bal.","Pledged Bal.Earmarked Bal.Pledgee Bal.","Market Price/ Face Valuein `","Valuein `"
-INE701B01021,"PUNJ LLOYD LIMITED - NEWEQUITY SHARES OF RS. 2/-AFTER SPLIT","2,475.0002,475.0000.000","0.0000.0000.000","0.0000.0000.000",19.90,"49,252.50"
-Sub Total,"49,252.50",,,,,
-Total,"49,252.50",,,,,
+INE426A01027,"ALEMBIC LIMITED - NEWEQUITY SHARES OF RS. 2/-AFTER SPLIT","6,500.0006,500.0000.000","0.0000.0000.000","0.0000.0000.000",45.00,"2,92,500.00"
+INE104F01011,"BODHTREE CONSULTINGLTD-EQUITY SHARES","0.0000.0000.000","0.0000.0000.000","0.0000.0000.000",73.45,0.00
+INE988K01017,"EQUITAS HOLDINGSLIMITED # EQUITY SHARES","750.000750.0000.000","0.0000.0000.000","0.0000.0000.000",163.65,"1,22,737.50"
+INE571A01020,"IPCA LABORATORIESLIMITED - EQUITY SHARESOF RE 2/- AFTER SUB-DIVISION","150.000150.0000.000","0.0000.0000.000","0.0000.0000.000",672.75,"1,00,912.50"
+INE685A01028,"TORRENTPHARMACEUTICALSLIMITED - NEW EQUITYSHARES OF RS.5/- AFTERSPLIT","50.00050.0000.000","0.0000.0000.000","0.0000.0000.000","1,410.25","70,512.50"
+Sub Total,"5,86,662.50",,,,,
+Total,"5,86,662.50",,,,,
 Mutual Fund Folios (F),,,,,,,,,
 "ISINUCC",ISIN Descriptio,Folio No.,"No. ofUnits","Averageost Per Unit`","Total Cost`","Current NAVper unitin `","urrent Valuin `","UnrealisedProfit/(Loss)`","AnnualisedReturn(%)"
-"INF740K01K57NOT AVAILABLE","DSP BlackRockDynamic AssetAllocation Fund -Reg - Growth",2924380,0.000,,0.00,,0.00,0.00,
+"INF209K01VA3MFBRLA0014","Aditya Birla SunLife Liquid Fund -Growth-Direct Plan(formerly known asAditya Birla SunLife Cash Plus)",1018166979,0.002,255.0000,0.51,282.5273,0.57,0.06,6.65
+"INF090I01FH9MFTEMP0012","Franklin IndiaPRIMA FUND -Direct - GROWTH",20346632,238.484,964.4287,"2,30,000.82","1,037.2520","2,47,368.01","17,367.19",10.31
+"INF109K016O4MFPRUI0071","ICICI PrudentialEquity ArbitrageFund - Direct Plan -Growth",8800494,219.416,22.7878,"5,000.00",23.9304,"5,250.71",250.71,6.51
 "",,,,
 Page 4,,Consolidated Account Statement
 "ISINUCC",ISIN Descriptio,Folio No.,"No. ofUnits","AverageCostPer Units`","Total Cost`","Current NAVper unitin `","urrent Valuin `","UnrealisedProfit/(Loss)`","AnnualisedReturn(%)"
-"INF090I01155MFTEMP0011","Franklin IndiaBLUECHIP FUND -DIVIDEND",17235866,"4,528.726",33.1219,"1,50,000.01",40.1603,"1,81,874.99","31,874.98",7.99
-"INF090I01825MFTEMP0002","Franklin IndiaBalanced Fund -DIVIDEND",17235866,"7,843.178",19.1249,"1,49,999.99",23.2214,"1,82,129.57","32,129.58",8.17
-"INF179K01AT2MFHDFC0023","HDFC PrudenceFund -  RegularPlan - Dividend",5369265,"6,298.551",23.8150,"1,50,000.00",30.9650,"1,95,034.63","45,034.63",9.50
-"INF179K01BC6MFHDFC0020","HDFC Top 200Fund - Regular Plan- Dividend",5369343,"4,135.193",36.2740,"1,50,000.00",56.1910,"2,32,360.63","82,360.63",9.04
-"INF109K01EG8MFPRUI0072","ICICI PrudentialBalancedAdvantage Fund -Dividend",6536458,"11,005.136",13.6300,"1,50,000.00",15.9200,"1,75,201.77","25,201.77",9.58
-"INF200K01388MFSBIM0055","SBI EmergingBusinesses Fund -Regular Plan -Dividend",11447431,"11,609.907",12.9200,"1,50,000.00",27.0221,"3,13,724.07","1,63,724.07",12.84
-"INF200K01115MFSBIM0017","SBI MagnumBalanced Fund -Regular Plan -Dividend",11447432,"6,504.770",23.0600,"1,50,000.00",29.1674,"1,89,727.23","39,727.23",9.41
-"INF789F01760MFUTIB0068","UTI-BLUECHIPFLEXICAP FUND -DIVIDEND PLAN",542232307041,"6,700.080",11.4418,"76,661.00",25.9094,"1,73,595.05","96,934.05",8.86
-Total,"16,43,647.94",,,,,,,,
-DEMAT ACCOUNT,,,,,,
+"INF109K01Y31MF/003/93/6/05","ICICI PrudentialLong Term EquityFund (Tax Saving) -Direct Plan -Growth",8800494,338.370,339.8646,"1,15,000.00",373.9900,"1,26,547.00","11,547.00",12.62
+"INF109K01O82MF/003/93/6/32","ICICI PrudentialSavings Fund -Direct Plan -Growth",8800494,183.507,317.7447,"58,308.38",336.9668,"61,835.77","3,527.39",6.51
+"INF174K01LT0MFKOTAK0002","Kotak EmergingEquity Scheme-Direct Plan -Growth",3743163,"5,838.366",39.3946,"2,30,000.00",42.3920,"2,47,500.01","17,500.01",10.39
+"INF247L01189NOT AVAILABLE","Motilal OswalFocused 25 Fund -Direct Growth",9104692693,"5,269.053",21.5041,"1,13,305.98",23.4645,"1,23,635.69","10,329.71",13.10
+"INF247L01502NOT AVAILABLE","Motilal OswalMulticap 35 Fund -Direct Growth",9104692693,74.744,26.7580,"2,000.00",27.7154,"2,071.56",71.56,4.91
+"INF204K01XP8NOT AVAILABLE","RELIANCE GILTSECURITIESFUND - DIRECTGROWTH PLANGROWTH OPTION",499182943744,293.590,23.8428,"7,000.00",24.0414,"7,058.31",58.31,2.79
+Total,"8,21,267.63",,,,,,,,
+NSDL DEMAT ACCOUNT,,,,,,
 Date,Order No,Description,"OpeningBalance",Debit,Credit,"ClosingBalance"
 NO TRANSACTION RECORDED FOR THE GIVEN PERIOD,,,,,,
+"CDSL Demat AccountZERODHA SECURITIES PRIVATE LIMITEDDP ID: 12081600 Client ID: 03092061","Summary of Transactions ofSHARAD  SINGH",,,
+Date,Transaction Particulars,Credit,Debit,"CurrentBalance"
+ISIN :                INE104F01011 - BODHTREE CONSULTING LTD-EQUITY SHARES,,,,
+01-May-2018,Opening Balance,"1,250.000",,
+22-May-2018,INTDEP-DR 64181124         CTRBO IN664987 RM1819037,,"1,250.000",0.000
+31-May-2018,Closing Balance,0.000,,
 MUTUAL FUND FOLIOS (F)
 Date,Transaction Details,"Amountin `","NAVin `","Pricein `",Units
-"ISIN: INF740K01K57 - DSP BlackRock Mutual Fund - Scheme Name: 539 - DSP BlackRock Dynamic Asset AllocationFund - Reg - Growth",Folio No -2924380,,,,
-"",Opening Balance,"7,780.982",,,
-05-FEB-2018,Redemption - CITIN18817268961,"1,10,342.11",14.1810,14.1810,"7,780.982"
-"",Closing Balance,0.000,,,
-ISIN: INF179K01AT2 - HDFC Mutual Fund - Scheme Name: 21 - HDFC Prudence Fund -  Regular Plan - Dividend,Folio No -5369265,,,,
-"",Opening Balance,"6,298.551",,,
-26-FEB-2018,Dividend Paid @ Rs.0.30 per unit,"1,889.57",,,0.000
-"",Closing Balance,"6,298.551",,,
 "",,,,
 Page 5,,Consolidated Account Statement
+Date,Transaction Details,"Amountin `","NAVin `","Pricein `",Units
+"ISIN: INF090I01FH9 - Franklin Templeton Fund - Scheme Name: 4179910155113 - Franklin India PRIMA FUND -Direct - GROWTH","Folio No -20346632",,,,
+"",Opening Balance,228.920,,,
+14-MAY-2018,"Systematic Investment Purchase - 9/ 9","10,000.00","1,045.6260","1,045.6260",9.564
+"",Closing Balance,238.484,,,
+"ISIN: INF174K01LT0 - Kotak Mutual Fund - Scheme Name: 123D - Kotak Emerging Equity Scheme-  Direct Plan -Growth",Folio No -3743163,,,,
+"",Opening Balance,"5,605.380",,,
+14-MAY-2018,Purchase (Continuous Offer),"10,000.00",42.9210,42.9210,232.986
+"",Closing Balance,"5,838.366",,,
+"ISIN: INF247L01189 - Motilal Oswal Mutual Fund - Scheme Name: MFGD - Motilal Oswal Focused 25 Fund - DirectGrowth","Folio No -9104692693",,,,
+"",Opening Balance,"4,839.725",,,
+30-APR-2018,Systematic Investment,"5,000.00",23.3859,23.3859,213.804
+28-MAY-2018,Systematic Investment,"5,000.00",23.1993,23.1993,215.524
+"",Closing Balance,"5,269.053",,,
+"ISIN: INF204K01XP8 - Reliance Mutual Fund - Scheme Name: GLAG - RELIANCE GILT SECURITIES FUND -DIRECT GROWTH PLAN GROWTH OPTION","Folio No -499182943744",,,,
+"",Opening Balance,251.939,,,
+10-MAY-2018,Sys. Investment,"1,000.00",24.0088,24.0088,41.651
+"",Closing Balance,293.590,,,
 NSDL DEMAT ACCOUNT,,,,
-"JOINT ACCOUNT HOLDERSHOLDER 1 - TALPADEDEEPAK KESHAVHOLDER 2 - TALPADENUTAN DEEPAK","DATE OF BIRTH(DD/MM/YYYY)Not RegisteredNot Registered","REGISTERED EMAILNot RegisteredClick here to RegisterNot Registered","AADHAAR NUMBERNot RegisteredNot Registered","REGISTERED MOBILENot RegisteredNot Registered"
-"DEMAT ACCOUNT WITHSBICAP SECURITIESLIMITED(IN306114)","CLIENT ID90066770","NOMINEENot Registered","LINKED BANK ACCOUNTSTATE BANK OF INDIA (IFSC:SBIN0004205)","BANK ACCOUNT NUMBER11209373883"
+"Sole HolderSHARAD  SINGH","DATE OF BIRTH(DD/MM/YYYY)Not Registered","REGISTERED EMAIL3sharad@gmail.com","AADHAAR NUMBERNot RegisteredClick here to Update","REGISTERED MOBILE009323506900"
+"DEMAT ACCOUNT WITHEDELWEISS BROKINGLIMITED(IN303719)","CLIENT ID10230151","NOMINEENot Registered","LINKED BANK ACCOUNTHDFC BANK LTD (IFSC:HDFC0000239)","BANK ACCOUNT NUMBER02391140015444"
 CDSL DEMAT ACCOUNT,,
-"JOINT ACCOUNT HOLDERSHOLDER 1 - DEEPAK KESHAVTALPADEHOLDER 2 - NUTAN DEEPAKTALPADE","DEMAT ACCOUNT WITHBHH SECURITIES PRIVATE LIMITED(12052200)","REGISTERED EMAILnutantalpade@yahoo.com"
-"NOMINEERegistered","CLIENT ID00006701","REGISTERED MOBILENot Registered"
+"Sole HolderSHARAD  SINGH","DEMAT ACCOUNT WITHZERODHA SECURITIES PRIVATE LIMITED(12081600)","REGISTERED EMAIL3SHARAD@GMAIL.COM"
+"NOMINEENot Registered","CLIENT ID03092061","REGISTERED MOBILE9323506900"
 "Folio No.AMC NAME","HOLDER DETAILSHOLDER(S) NAME(S)NOMINEE","KYCStatus",PAN,MOBILE NO,EMAIL ID,RTA
-"11447432SBI Mutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - Deepak Keshav TalpadeHOLDER 2 - Nutan Deepak TalpadeNOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXXXXXX125,tejastalpade@gmail.com,CAMS
-"2924380DSP BlackRockMutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - Deepak Keshav TalpadeHOLDER 2 - Nutan Deepak TalpadeNOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXXXXXX125,tejastalpade@gmail.com,CAMS
-"17235866Franklin TempletonFund","JOINT ACCOUNT HOLDERSHOLDER 1 - DEEPAK KESHAVTALPADEHOLDER 2 - NUTAN DEEPAK TALPADENOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXX0125,nutantalpade@yahoo.com,FTEMP
-"11447431SBI Mutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - Deepak Keshav TalpadeHOLDER 2 - Nutan Deepak TalpadeNOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXXXXXX125,tejastalpade@gmail.com,CAMS
-"542232307041UTI Mutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - DEEPAK KESHAVTALPADEHOLDER 2 - NUTAN DEEPAK TALPADENOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXX0125,Please Provide,KARVY
-"6536458ICICI PrudentialMutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - Deepak Keshav TalpadeHOLDER 2 - Nutan Deepak TalpadeNOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXXXXXX125,tejastalpade@gmail.com,CAMS
-"5369265HDFC Mutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - Deepak Keshav TalpadeHOLDER 2 - Nutan Deepak TalpadeNOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXXXXXX125,Please Provide,CAMS
-"5369343HDFC Mutual Fund","JOINT ACCOUNT HOLDERSHOLDER 1 - Deepak Keshav TalpadeHOLDER 2 - Nutan Deepak TalpadeNOMINEE ? Registered","OKOK","AABPT5733EABAPT6150B",XXXXXXXXXX125,Please Provide,CAMS
+"8800494ICICI PrudentialMutual Fund","Sole HolderSharad SinghNOMINEE ? Registered",OK,AMZPS1060M,XXXXXXXXXX900,3sharad@gmail.com,CAMS
+"499182943744Reliance Mutual Fund","Sole HolderSHARAD SINGHNOMINEE ? Registered",OK,AMZPS1060M,XXXXXX6900,3sharad@gmail.com,KARVY
+"3743163Kotak Mutual Fund","Sole HolderSharad SinghNOMINEE ? Registered",OK,AMZPS1060M,XXXXXXXXXX900,3sharad@gmail.com,CAMS
+"9104692693Motilal Oswal MutualFund","Sole HolderSHARAD SINGHNOMINEE ? Registered",OK,AMZPS1060M,XXXXXX6900,3sharad@gmail.com,KARVY
+"20346632Franklin TempletonFund","Sole HolderSHARAD SINGHNOMINEE ? Registered",OK,AMZPS1060M,XXXXXX6900,3sharad@gmail.com,FTEMP
 "",,,,
 Page 6,,Consolidated Account Statement
+"1018166979Aditya Birla Sun LifeMutual Fund","Sole HolderSHARAD SINGHNOMINEE ? Please Nominate",OK,AMZPS1060M,XXXXXXXXXX900,3sharad@gmail.com,CAMS
 "",,,,
 Page 7,,Consolidated Account Statement
 "",,,,

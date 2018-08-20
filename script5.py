@@ -42,8 +42,8 @@ for name, value in df[req_column1].iteritems():
         lent_bal.append(np.nan)
 
 df[req_column1] = current_bal
-df['Unnamed: 6'] = free_bal
-df['Unnamed: 7'] = lent_bal
+df['Unnamed: 7'] = free_bal
+df['Unnamed: 8'] = lent_bal
 
 safekeep_bal=[]
 locked_bal= []
@@ -67,8 +67,8 @@ for name, value in df[req_column2].iteritems():
         pledge_bal.append(np.nan)
 
 df[req_column2] = safekeep_bal
-df['Unnamed: 8'] = locked_bal
-df['Unnamed: 9'] = pledge_bal
+df['Unnamed: 9'] = locked_bal
+df['Unnamed: 10'] = pledge_bal
 
 pledged_bal=[]
 earmarked_bal=[]
@@ -93,8 +93,17 @@ for name, value in df[req_column3].iteritems():
         pledgee_bal.append(np.nan)
 
 df[req_column3] = pledged_bal
-df['Unnamed: 10'] = earmarked_bal
-df['Unnamed: 11'] = pledgee_bal
+df['Unnamed: 11'] = earmarked_bal
+df['Unnamed: 12'] = pledgee_bal
+# df.columns = df['Equities (E)','a','b','c','d','e','f','g','h','i','j','k','l']   E,1,2,7,8,3,9,10,4,11,12,5,6
 
-df.to_csv(table_file)
+if table_file == "tables/table4a.csv":
+    df = df[['Equities (E)', 'Unnamed: 1' , 'Unnamed: 2' , 'Unnamed: 7' ,'Unnamed: 8' ,'Unnamed: 3' ,'Unnamed: 9' ,'Unnamed: 10' ,'Unnamed: 4' ,'Unnamed: 11' ,'Unnamed: 12' ,'Unnamed: 5' ,'Unnamed: 6']]
+    df.columns = ['Equities (E)','a','b','c','d','e','f','g','h','i','j','k','l']
+    df.to_csv(table_file)
+else:
+    df = df[['Equities (E)', 'Unnamed: 1' , 'Unnamed: 7' ,'Unnamed: 8' ,'Unnamed: 2' ,'Unnamed: 9' ,'Unnamed: 10' ,'Unnamed: 3' ,'Unnamed: 11' ,'Unnamed: 12' ,'Unnamed: 4' ,'Unnamed: 5']]
+    df.columns = ['Equities (E)','a','b','c','d','e','f','g','h','i','j','k']
+    # df.drop(df.index[[1]])
+    df.to_csv(table_file)
 
